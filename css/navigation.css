@@ -21,6 +21,12 @@ body{
   position: relative;
   padding: 15px 35px;
 }
+.icon button{
+  background-color: Transparent; 
+  border-style: none; 
+  outline: none;
+  font-size: 20px;
+}
 .navigation-middle{
   padding: 50px 35px;
   font-size: 35px;
