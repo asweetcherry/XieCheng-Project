@@ -24,13 +24,15 @@ const AllTips =[Tips1,Tips2,Tips3,Tips4,Tips5,Tips6,Tips7,Tips8];
 for(let i = 0; i < Tips.length; i++) {
     Tips[i].style.opacity = '0';
 }
-Ts1.onmousemove= () =>{
-    Tips1.style.opacity="1";}
-
-Ts1.onmouseleave = () =>{
-    
-    Tips1.style.opacity="0";
+for(let i=0; i<AllTs.length;i++){
+        AllTs[i].onmousemove= () =>{
+            AllTips[i].style.opacity="1";}
 }
+for(let i=0; i<AllTs.length;i++){
+        AllTs[i].onmouseleave= () =>{
+            AllTips[i].style.opacity="0";}
+}
+
 navBtn.onclick = () => {
     if (switchNav) {
         navigation.className = 'nav-size-small';
